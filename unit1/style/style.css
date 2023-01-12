@@ -401,4 +401,19 @@ template {
 .swiper {
   width: 600px;
   height: 300px;
+}
+
+#main__wrapper {
+  border: solid 2px blue;
+}
+
+@media only screen and (min-width: 560px) {
+  #main__wrapper {
+    border: solid 2px green;
+  }
+}
+@media only screen and (min-width: 1028px) {
+  #main__wrapper {
+    border: solid 2px red;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -23,7 +23,15 @@
     <section id="header__wrapper">
       <div>
         <div id="logo">
-          <!-- <img src="" alt=""> -->
+          <img
+            src="./content/logo_assets/logo.png"
+            alt="Cabot Cruises Logo"
+            srcset="
+              ./content/logo_assets/logo1.png 1x,
+              ./content/logo_assets/logo2.png 2x,
+              ./content/logo_assets/logo3.png 3x
+            "
+          />
         </div>
 
         <h2>1-800-555-1234</h2>
@@ -58,7 +66,19 @@
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  media="(max-width: 560px)"
+                  srcset="/unit1/content/images/slider_1-square.jpg"
+                />
+                <img
+                  src="/unit1/content/images/slider_1.jpg"
+                  alt="Cruise Image One"
+                />
+              </picture>
+            </div>
+
             <div class="swiper-slide">Slide 2</div>
             <div class="swiper-slide">Slide 3</div>
           </div>
