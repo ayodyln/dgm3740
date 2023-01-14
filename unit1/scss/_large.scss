@@ -1,3 +1,8 @@
-#main__wrapper {
-  border: solid 2px red;
+@media only screen and (min-width: 1600px) {
+  #BlogArticles {
+    padding: 0;
+  }
+  #nav__wrapper {
+    padding: 0;
+  }
 }

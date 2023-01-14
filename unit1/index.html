@@ -21,7 +21,7 @@
   </head>
   <body>
     <section id="header__wrapper">
-      <div>
+      <header>
         <div id="logo">
           <img
             src="./content/logo_assets/logo.png"
@@ -34,19 +34,38 @@
           />
         </div>
 
-        <h2>1-800-555-1234</h2>
-      </div>
+        <a href="tel:+18005551234">1-800-555-1234</a>
+      </header>
+    </section>
 
-      <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/cruises">Cruises</a></li>
-          <li><a href="/agents">Agents</a></li>
-          <li><a href="/book">Book</a></li>
-        </ul>
+    <section id="nav__wrapper">
+      <div id="nav">
+        <nav>
+          <button id="hamburgerBtn">&#9776;</button>
+          <ul id="primaryNav">
+            <li><a href="#">Home</a></li>
+            <li class="parent">
+              <a href="#">Cruises</a>
+            </li>
+            <li class="parent">
+              <a href="#">Agents</a>
+              <ul>
+                <li><a href="#">Sally Rodgers</a></li>
+                <li><a href="#">Buddy Hall</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Book</a></li>
+          </ul>
+        </nav>
 
         <form id="searchInput" action="">
-          <input type="text" name="search" id="search" />
+          <input
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Search..."
+          />
+
           <button>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
               <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
@@ -56,7 +75,7 @@
             </svg>
           </button>
         </form>
-      </nav>
+      </div>
     </section>
 
     <section id="main__wrapper">
@@ -69,7 +88,7 @@
             <div class="swiper-slide">
               <picture>
                 <source
-                  media="(max-width: 560px)"
+                  media="(max-width: 350px)"
                   srcset="/unit1/content/images/slider_1-square.jpg"
                 />
                 <img
@@ -78,45 +97,72 @@
                 />
               </picture>
             </div>
-
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  media="(max-width: 350px)"
+                  srcset="/unit1/content/images/slider_2-square.jpg"
+                />
+                <img
+                  src="/unit1/content/images/slider_2.jpg"
+                  alt="Cruise Image One"
+                />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  media="(max-width: 350px)"
+                  srcset="/unit1/content/images/slider_3-square.jpg"
+                />
+                <img
+                  src="/unit1/content/images/slider_3.jpg"
+                  alt="Cruise Image One"
+                />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  media="(max-width: 350px)"
+                  srcset="/unit1/content/images/slider_4-square.jpg"
+                />
+                <img
+                  src="/unit1/content/images/slider_4.jpg"
+                  alt="Cruise Image One"
+                />
+              </picture>
+            </div>
           </div>
-          <!-- If we need pagination -->
+
+          <!-- If we need pagination -->d
           <div class="swiper-pagination"></div>
-
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-
-          <!-- If we need scrollbar -->
-          <div class="swiper-scrollbar"></div>
         </div>
 
         <section id="BlogArticles">
           <h1>Recent Blog Articles</h1>
 
           <div>
-            <div class="blogCTA">
+            <a href="#" class="blogCTA">
               <span>Blog Title</span>
               <img src="" alt="" />
               <span>Date Info</span>
-            </div>
-            <div class="blogCTA">
+            </a href="#">
+            <a href="#" class="blogCTA">
               <span>Blog Title</span>
               <img src="" alt="" />
               <span>Date Info</span>
-            </div>
-            <div class="blogCTA">
+            </a href="#">
+            <a href="#" class="blogCTA">
               <span>Blog Title</span>
               <img src="" alt="" />
               <span>Date Info</span>
-            </div>
-            <div class="blogCTA">
+            </a href="#">
+            <a href="#" class="blogCTA">
               <span>Blog Title</span>
               <img src="" alt="" />
               <span>Date Info</span>
-            </div>
+            </a href="#">
           </div>
         </section>
       </main>
@@ -125,13 +171,7 @@
     <section id="footer__wrapper">
       <footer>
         <section>
-          <div id="ContactUs">
-            <!-- Address -->
-
-            <!-- Phone -->
-
-            <!-- Hours -->
-          </div>
+          <div id="ContactUs"></div>
 
           <div id="NewsLetter"></div>
 
