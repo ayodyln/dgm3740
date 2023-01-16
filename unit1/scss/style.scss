@@ -1,15 +1,5 @@
 @import "normalize";
-@import "swiper";
 @import "mobileNav";
-
-body {
-  font-family: sans-serif;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  width: 100%;
-  overflow: hidden;
-}
 
 @import "small";
 
@@ -20,4 +10,3 @@ body {
 @media only screen and (min-width: 1028px) {
   @import "large";
 }
-

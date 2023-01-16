@@ -1,3 +1,16 @@
+body {
+  display: initial;
+}
+
+#BlogArticles {
+  div {
+    gap: 1.5%;
+    .blogCTA {
+      width: 32.33%;
+    }
+  }
+}
+
 /*  ----------------------- NAVIGATION --------------------------- */
 nav button {
   display: none;
