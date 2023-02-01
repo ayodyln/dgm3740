@@ -5,8 +5,37 @@ body {
 #BlogArticles {
   div {
     gap: 1.5%;
+    width: 100%;
     .blogCTA {
       width: 32.33%;
+    }
+  }
+}
+
+#contactUs__wrapper {
+  #ContactUs {
+    div {
+      display: grid;
+      grid-template-areas:
+        "address news"
+        "phone news"
+        "hours .";
+
+      #address__section {
+        grid-area: address;
+      }
+
+      #phone__section {
+        grid-area: phone;
+      }
+
+      #hours__section {
+        grid-area: hours;
+      }
+
+      #news__section {
+        grid-area: news;
+      }
     }
   }
 }

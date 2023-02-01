@@ -495,7 +495,7 @@ h2 {
 }
 
 #main__wrapper {
-  height: 100%;
+  height: auto;
   width: 100%;
   order: 3;
 }
@@ -615,47 +615,41 @@ h2 {
 }
 
 #contactUs__wrapper {
-  margin-top: 1rem;
-  padding: 8px;
   background-color: #053544;
+  color: white;
   order: 4;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-}
-#contactUs__wrapper #ContactUs {
-  color: white;
-  display: flex;
-  flex-direction: column;
   gap: 1rem;
-}
-#contactUs__wrapper #ContactUs p {
-  margin: 0;
-}
-#contactUs__wrapper #ContactUs a {
-  text-decoration: none;
-  color: white;
-}
-#contactUs__wrapper #ContactUs a:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-#contactUs__wrapper #ContactUs form {
+  padding: 8px;
   margin-top: 1rem;
+}
+#contactUs__wrapper #ContactUs h2 {
+  margin-bottom: 1rem;
+}
+#contactUs__wrapper #ContactUs div {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
-#contactUs__wrapper #ContactUs form input {
-  height: 32px;
+#contactUs__wrapper #ContactUs div section h3,
+#contactUs__wrapper #ContactUs div section h2 {
+  margin: 0;
 }
-#contactUs__wrapper #ContactUs form button {
-  border: none;
-  border-radius: 10px;
-  padding: 10px;
+#contactUs__wrapper #ContactUs div section p {
+  margin: 0;
 }
-#contactUs__wrapper #WhyCabotCruise {
+#contactUs__wrapper #ContactUs div section form {
+  display: flex;
+  flex-direction: column;
+}
+#contactUs__wrapper #ContactUs div section a {
+  text-decoration: none;
   color: white;
+}
+#contactUs__wrapper #ContactUs div section a:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 #socials__wrapper {
@@ -689,9 +683,26 @@ h2 {
   }
   #BlogArticles div {
     gap: 1.5%;
+    width: 100%;
   }
   #BlogArticles div .blogCTA {
     width: 32.33%;
+  }
+  #contactUs__wrapper #ContactUs div {
+    display: grid;
+    grid-template-areas: "address news" "phone news" "hours .";
+  }
+  #contactUs__wrapper #ContactUs div #address__section {
+    grid-area: address;
+  }
+  #contactUs__wrapper #ContactUs div #phone__section {
+    grid-area: phone;
+  }
+  #contactUs__wrapper #ContactUs div #hours__section {
+    grid-area: hours;
+  }
+  #contactUs__wrapper #ContactUs div #news__section {
+    grid-area: news;
   }
   /*  ----------------------- NAVIGATION --------------------------- */
   nav button {
