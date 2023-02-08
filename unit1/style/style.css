@@ -496,12 +496,12 @@ h2 {
   margin: 0;
 }
 
-#main__wrapper {
+main {
   height: auto;
   width: 100%;
   order: 3;
 }
-#main__wrapper main {
+main #main__wrapper {
   height: auto;
   width: 100%;
   display: flex;
