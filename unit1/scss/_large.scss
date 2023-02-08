@@ -19,16 +19,40 @@
 }
 
 #contactUs__wrapper {
-  display: flex;
-  flex-direction: row;
+  #AboutUs {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1%;
 
-  #ContactUs {
-    width: 60%;
-    div {
+    #Contact {
+      // display: flex;
+      width: 66%;
+      grid-template-columns: 1fr 1fr;
+
+      // H2 withing ADDRESS Section
+      h2 {
+      }
+      section {
+      }
+      #address__section {
+        grid-area: address;
+      }
+      #phone__section {
+        grid-area: phone;
+      }
+      #hours__section {
+        grid-area: hours;
+      }
+      #news__section {
+        grid-area: news;
+        margin-left: 0;
+        width: 100%;
+      }
     }
-  }
 
-  #WhyCabotCruise {
-    width: 40%;
+    #WhyCabotCruise {
+      width: 33%;
+    }
   }
 }

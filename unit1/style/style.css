@@ -422,6 +422,8 @@ template {
     font-weight: normal;
     background-color: #084c61;
     position: absolute;
+    left: 0;
+    width: 100%;
   }
   #primaryNav li.active a {
     background-color: rgba(0, 0, 0, 0.25);
@@ -635,7 +637,11 @@ h2 {
   margin-bottom: 0.5rem;
 }
 #contactUs__wrapper #AboutUs #Contact section h3 {
+  margin: 0;
   margin-bottom: 0.25rem;
+}
+#contactUs__wrapper #AboutUs #Contact section p {
+  margin: 0;
 }
 #contactUs__wrapper #AboutUs #Contact section a {
   text-decoration: none;
@@ -648,6 +654,7 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  margin-top: 12px;
 }
 #contactUs__wrapper #AboutUs #Contact section form input {
   height: 32px;
@@ -697,21 +704,23 @@ h2 {
   #BlogArticles div .blogCTA {
     width: 32.33%;
   }
-  #contactUs__wrapper #ContactUs div {
+  #contactUs__wrapper #AboutUs #Contact {
     display: grid;
     grid-template-areas: "address news" "phone news" "hours .";
   }
-  #contactUs__wrapper #ContactUs div #address__section {
+  #contactUs__wrapper #AboutUs #Contact #address__section {
     grid-area: address;
   }
-  #contactUs__wrapper #ContactUs div #phone__section {
+  #contactUs__wrapper #AboutUs #Contact #phone__section {
     grid-area: phone;
   }
-  #contactUs__wrapper #ContactUs div #hours__section {
+  #contactUs__wrapper #AboutUs #Contact #hours__section {
     grid-area: hours;
   }
-  #contactUs__wrapper #ContactUs div #news__section {
+  #contactUs__wrapper #AboutUs #Contact #news__section {
     grid-area: news;
+    margin-left: 1rem;
+    width: 60%;
   }
   /*  ----------------------- NAVIGATION --------------------------- */
   nav button {
@@ -785,14 +794,31 @@ h2 {
   }
 }
 @media only screen and (min-width: 1028px) {
-  #contactUs__wrapper {
+  #contactUs__wrapper #AboutUs {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
+    gap: 1%;
   }
-  #contactUs__wrapper #ContactUs {
-    width: 60%;
+  #contactUs__wrapper #AboutUs #Contact {
+    width: 66%;
+    grid-template-columns: 1fr 1fr;
   }
-  #contactUs__wrapper #WhyCabotCruise {
-    width: 40%;
+  #contactUs__wrapper #AboutUs #Contact #address__section {
+    grid-area: address;
+  }
+  #contactUs__wrapper #AboutUs #Contact #phone__section {
+    grid-area: phone;
+  }
+  #contactUs__wrapper #AboutUs #Contact #hours__section {
+    grid-area: hours;
+  }
+  #contactUs__wrapper #AboutUs #Contact #news__section {
+    grid-area: news;
+    margin-left: 0;
+    width: 100%;
+  }
+  #contactUs__wrapper #AboutUs #WhyCabotCruise {
+    width: 33%;
   }
 }/*# sourceMappingURL=style.css.map */

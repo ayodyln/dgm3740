@@ -13,29 +13,37 @@ body {
 }
 
 #contactUs__wrapper {
-  #ContactUs {
-    div {
+  #AboutUs {
+    #Contact {
       display: grid;
+
       grid-template-areas:
         "address news"
         "phone news"
         "hours .";
 
+      // H2 withing ADDRESS Section
+      h2 {
+      }
+      section {
+      }
       #address__section {
         grid-area: address;
       }
-
       #phone__section {
         grid-area: phone;
       }
-
       #hours__section {
         grid-area: hours;
       }
-
       #news__section {
         grid-area: news;
+        margin-left: 1rem;
+        width: 60%;
       }
+    }
+
+    #WhyCabotCruise {
     }
   }
 }
