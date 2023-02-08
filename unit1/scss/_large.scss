@@ -6,3 +6,29 @@
     padding: 0;
   }
 }
+
+#BlogArticles {
+  margin-bottom: 5rem;
+  div {
+    gap: 1%;
+    width: 100%;
+    .blogCTA {
+      width: 24.2%;
+    }
+  }
+}
+
+#contactUs__wrapper {
+  display: flex;
+  flex-direction: row;
+
+  #ContactUs {
+    width: 60%;
+    div {
+    }
+  }
+
+  #WhyCabotCruise {
+    width: 40%;
+  }
+}
