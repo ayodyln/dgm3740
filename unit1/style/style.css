@@ -622,7 +622,7 @@ h2 {
   order: 4;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
   padding: 8px;
   margin-top: 1rem;
 }
@@ -632,6 +632,11 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+}
+#contactUs__wrapper #AboutUs #Contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 #contactUs__wrapper #AboutUs #Contact h2 {
   margin-bottom: 0.5rem;
@@ -707,6 +712,7 @@ h2 {
   }
   #contactUs__wrapper #AboutUs #Contact {
     display: grid;
+    gap: 0;
     grid-template-areas: "address news" "phone news" "hours .";
   }
   #contactUs__wrapper #AboutUs #Contact #address__section {

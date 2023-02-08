@@ -16,6 +16,7 @@ body {
   #AboutUs {
     #Contact {
       display: grid;
+      gap: 0;
 
       grid-template-areas:
         "address news"
