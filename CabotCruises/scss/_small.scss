@@ -279,6 +279,7 @@ input[type="search"] {
 
 section#CruisesPage {
   height: 100%;
+  padding: 8px;
 
   h1 {
   }
@@ -286,6 +287,7 @@ section#CruisesPage {
   .cruises {
     display: flex;
     flex-wrap: wrap;
+    gap: 1rem;
     div {
       width: 100%;
       img {
@@ -293,11 +295,19 @@ section#CruisesPage {
         height: auto;
       }
       section {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+
         h3 {
+          margin: 0;
         }
         p {
+          margin: 0;
         }
         button {
+          align-self: end;
+          width: fit-content;
         }
       }
     }

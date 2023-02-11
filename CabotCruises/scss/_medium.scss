@@ -48,6 +48,26 @@
   }
 }
 
+// --------------
+//! PAGES -------
+// --------------
+
+section#CruisesPage {
+  h1 {
+  }
+
+  .cruises {
+    div {
+      width: 100%;
+      display: flex;
+      img {
+      }
+      section {
+      }
+    }
+  }
+}
+
 /*  ----------------------- NAVIGATION --------------------------- */
 nav button {
   display: none;

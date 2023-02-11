@@ -718,10 +718,12 @@ input[type=search] {
 
 section#CruisesPage {
   height: 100%;
+  padding: 8px;
 }
 section#CruisesPage .cruises {
   display: flex;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 section#CruisesPage .cruises div {
   width: 100%;
@@ -730,6 +732,22 @@ section#CruisesPage .cruises div img {
   width: 100%;
   height: auto;
 }
+section#CruisesPage .cruises div section {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+section#CruisesPage .cruises div section h3 {
+  margin: 0;
+}
+section#CruisesPage .cruises div section p {
+  margin: 0;
+}
+section#CruisesPage .cruises div section button {
+  align-self: end;
+  width: fit-content;
+}
+
 @media only screen and (min-width: 560px) {
   #header__wrapper {
     order: 1;
@@ -762,6 +780,10 @@ section#CruisesPage .cruises div img {
     grid-area: news;
     margin-left: 1rem;
     width: 60%;
+  }
+  section#CruisesPage .cruises div {
+    width: 100%;
+    display: flex;
   }
   /*  ----------------------- NAVIGATION --------------------------- */
   nav button {
