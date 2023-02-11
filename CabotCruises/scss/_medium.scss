@@ -71,6 +71,17 @@ section#CruisesPage {
   }
 }
 
+section#AgentsPage {
+  .agents {
+    position: relative;
+    img {
+      width: 300px;
+      float: right;
+      margin-left: 1rem;
+    }
+  }
+}
+
 /*  ----------------------- NAVIGATION --------------------------- */
 nav button {
   display: none;

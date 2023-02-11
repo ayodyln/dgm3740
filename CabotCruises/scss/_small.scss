@@ -264,6 +264,15 @@ input[type="search"] {
 
   footer {
     text-align: center;
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+    a:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
   }
 }
 
@@ -340,8 +349,8 @@ section#AgentsPage {
     height: 100%;
 
     img {
-      float: right;
-      width: 300px;
+      width: 100%;
+      height: auto;
     }
 
     div {
@@ -353,8 +362,17 @@ section#AgentsPage {
         margin: 0;
       }
 
+      a {
+        text-decoration: none;
+        color: #074456;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+
       p {
         margin: 0;
+        font-size: 20px;
       }
     }
 
@@ -363,5 +381,15 @@ section#AgentsPage {
       flex-direction: column;
       gap: 12px;
     }
+  }
+}
+
+section#BookingPage {
+  height: fit-content;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+
+  .booking {
   }
 }

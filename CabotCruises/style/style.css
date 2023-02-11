@@ -713,6 +713,14 @@ input[type=search] {
 #footer__wrapper footer {
   text-align: center;
 }
+#footer__wrapper footer a {
+  text-decoration: none;
+  color: white;
+}
+#footer__wrapper footer a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
 
 .Slider picture img {
   width: 100%;
@@ -775,8 +783,8 @@ section#AgentsPage .agents {
   height: 100%;
 }
 section#AgentsPage .agents img {
-  float: right;
-  width: 300px;
+  width: 100%;
+  height: auto;
 }
 section#AgentsPage .agents div {
   margin: 8px 0;
@@ -787,8 +795,16 @@ section#AgentsPage .agents div {
 section#AgentsPage .agents div h3 {
   margin: 0;
 }
+section#AgentsPage .agents div a {
+  text-decoration: none;
+  color: #074456;
+}
+section#AgentsPage .agents div a:hover {
+  text-decoration: underline;
+}
 section#AgentsPage .agents div p {
   margin: 0;
+  font-size: 20px;
 }
 section#AgentsPage .agents :nth-last-child(1) {
   display: flex;
@@ -796,6 +812,12 @@ section#AgentsPage .agents :nth-last-child(1) {
   gap: 12px;
 }
 
+section#BookingPage {
+  height: fit-content;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+}
 @media only screen and (min-width: 560px) {
   #header__wrapper {
     order: 1;
@@ -839,6 +861,14 @@ section#AgentsPage .agents :nth-last-child(1) {
   }
   section#CruisesPage .cruises div section {
     width: 66%;
+  }
+  section#AgentsPage .agents {
+    position: relative;
+  }
+  section#AgentsPage .agents img {
+    width: 300px;
+    float: right;
+    margin-left: 1rem;
   }
   /*  ----------------------- NAVIGATION --------------------------- */
   nav button {
