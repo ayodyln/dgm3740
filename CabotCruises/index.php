@@ -1,4 +1,7 @@
-<?php include('_header.php') ?>
+<?php
+$title = "Cabot Cruises";
+include('_header.php')
+?>
 
 <section id="main__wrapper">
   <div class="Slider">
@@ -42,22 +45,22 @@
       <a href="#" class="blogCTA">
         <span>Caribbean Cruises</span>
         <img src="./content/articles/blog_1-square.jpg" alt="Article 1" />
-        <span>Date Info</span>
+        <span>Jan 1, 2023</span>
       </a>
       <a href="#" class="blogCTA">
-        <span>Blog Title</span>
+        <span>Solo Getaways</span>
         <img src="./content/articles/blog_2-square.jpg" alt="Article 2" />
-        <span>Date Info</span>
+        <span>Jan 22, 2023</span>
       </a>
       <a href="#" class="blogCTA">
-        <span>Blog Title</span>
+        <span>Popular Cruises</span>
         <img src="./content/articles/blog_3-article.jpg" alt="Article 3" />
-        <span>Date Info</span>
+        <span>Feb 1, 2023</span>
       </a>
       <a href="#" class="blogCTA">
-        <span>Blog Title</span>
+        <span>Dinner Options</span>
         <img src="./content/articles/blog_4-article.jpg" alt="Article 4" />
-        <span>Date Info</span>
+        <span>Feb 4, 2023</span>
       </a>
     </div>
   </section>

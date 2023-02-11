@@ -5,21 +5,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="/style.css" /> -->
-    <!-- <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css" /> -->
-    <!-- <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css" /> -->
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css" />
 
 
-    <title>Cabot Cruises</title>
+    <title><?php echo $title; ?></title>
 </head>
 
 
 <body>
-    <style>
-        <?php include('style.css') ?><?php include('slick-1.8.1/slick/slick.css') ?><?php include('slick-1.8.1/slick/slick-theme.css') ?>
-    </style>
-
-
     <section id="header__wrapper">
         <header>
             <div id="logo">
@@ -39,18 +34,20 @@
             <nav>
                 <button id="hamburgerBtn">&#9776;</button>
                 <ul id="primaryNav">
-                    <li><a href="#">Home</a></li>
-                    <li class="parent">
-                        <a href="#">Cruises</a>
+                    <li><a href="./index.php">Home</a></li>
+
+                    <li>
+                        <a href="./cruises.php">Cruises</a>
                     </li>
-                    <li class="parent">
-                        <a href="#">Agents</a>
+
+                    <li class="parent dropdown-parent">
+                        <a href="./agents.php" class="dropdown-anchor">Agents</a>
                         <ul>
                             <li><a href="#">Sally Rodgers</a></li>
                             <li><a href="#">Buddy Hall</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Book</a></li>
+                    <li><a href="./booking.php">Book</a></li>
                 </ul>
             </nav>
 
