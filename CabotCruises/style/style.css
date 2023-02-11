@@ -744,8 +744,18 @@ section#CruisesPage .cruises div section p {
   margin: 0;
 }
 section#CruisesPage .cruises div section button {
+  height: 44px;
+  border-radius: 14px;
   align-self: end;
   width: fit-content;
+  border: none;
+  width: 120px;
+  cursor: pointer;
+  background-color: #053544;
+  color: white;
+}
+section#CruisesPage .cruises div section button:hover {
+  background-color: #095b74;
 }
 
 @media only screen and (min-width: 560px) {
@@ -784,6 +794,13 @@ section#CruisesPage .cruises div section button {
   section#CruisesPage .cruises div {
     width: 100%;
     display: flex;
+    gap: 1rem;
+  }
+  section#CruisesPage .cruises div img {
+    width: 33%;
+  }
+  section#CruisesPage .cruises div section {
+    width: 66%;
   }
   /*  ----------------------- NAVIGATION --------------------------- */
   nav button {

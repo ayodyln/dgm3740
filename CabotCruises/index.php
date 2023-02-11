@@ -1,6 +1,6 @@
 <?php
 $title = "Cabot Cruises";
-include('_header.php')
+include('_top.php')
 ?>
 
 <section id="main__wrapper">
@@ -66,4 +66,4 @@ include('_header.php')
   </section>
 </section>
 
-<?php include('_footer.php') ?>
+<?php include('_bot.php') ?>

@@ -1,6 +1,6 @@
 <?php
 $title = "Agents";
-include('_header.php')
+include('_top.php')
 ?>
 
 <section id="AgentsPage">
@@ -10,4 +10,4 @@ include('_header.php')
     </div>
 </section>
 
-<?php include('_footer.php') ?>
+<?php include('_bot.php') ?>

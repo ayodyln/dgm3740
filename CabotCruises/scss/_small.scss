@@ -306,8 +306,18 @@ section#CruisesPage {
           margin: 0;
         }
         button {
+          height: 44px;
+          border-radius: 14px;
           align-self: end;
           width: fit-content;
+          border: none;
+          width: 120px;
+          cursor: pointer;
+          background-color: #053544;
+          color: white;
+        }
+        button:hover {
+          background-color: #095b74;
         }
       }
     }

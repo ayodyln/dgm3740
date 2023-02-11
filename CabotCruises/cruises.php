@@ -1,6 +1,6 @@
 <?php
 $title = "Cruises";
-include('_header.php')
+include('_top.php')
     ?>
 
 <section id="CruisesPage">
@@ -9,7 +9,8 @@ include('_header.php')
     </h1>
     <div class="cruises">
         <div class="pkg-1">
-            <img src="./content/originals/blog_1.jpg" alt="Cruise Package 1">
+            <img src="./content/originals/new-zealand.jpg" alt="Cruise Package 1">
+
             <section>
                 <h3>Australia & New Zealand Cruises from $999!</h3>
                 <p>
@@ -21,40 +22,44 @@ include('_header.php')
             </section>
         </div>
         <div class="pkg-2">
-            <img src="./content/originals/blog_1.jpg" alt="Cruise Package 2">
+            <img src="./content/originals/Hawaii.jpg" alt="Cruise Package 2">
+
             <section>
-                <h3>Title of Cruize with $price!</h3>
+                <h3>Hawaii Cruise for the family, from $899!</h3>
                 <p>
-                    Grab some real text for these descrip5ons and pase it in here. Cruise the Pacific Coast including
-                    Canada and San Francisco in Fall 2018. Larry Gelwix the “Getaway Guru®” will be your cruise host
-                    while you visit Astoria, Oregon and Victoria, B.C. Plus, spend 2 days visi5ng San Francisco! The
-                    highlight of this cruise will be sailing into and out .
+                    Enjoy a family get away to the beautiful islands of Hawaii! This cruise takes families to the
+                    amazing islands of Hawaii and get to experience the magic they have to offer. Anywhere from site
+                    seeing and enjoying the greatest cuisines. The amazing cultural experiences that your family can
+                    build memories around will never be forgotten. Enjoy this 12-day cruise with food and travels
+                    included in the price of $899/person.
                 </p>
                 <button>Read More</button>
             </section>
         </div>
         <div class="pkg-3">
-            <img src="./content/originals/blog_1.jpg" alt="Cruise Package 3">
+            <img src="./content/originals/Alaska.jpg" alt="Cruise Package 3">
+
             <section>
-                <h3>Title of Cruize with $price!</h3>
+                <h3>Alaskan Cruise from $950!</h3>
                 <p>
-                    Grab some real text for these descrip5ons and pase it in here. Cruise the Pacific Coast including
-                    Canada and San Francisco in Fall 2018. Larry Gelwix the “Getaway Guru®” will be your cruise host
-                    while you visit Astoria, Oregon and Victoria, B.C. Plus, spend 2 days visi5ng San Francisco! The
-                    highlight of this cruise will be sailing into and out .
+                    This time of year is great to experience the wonders of the last frontier! The great Alaskan state
+                    is massive and filled with beautiful views to be aborbed only in person. This cruise is filled with
+                    destinations of site seeing, food, shopping, cultural locations, and much more!
+                    This trip is $950/person with everything included.
                 </p>
                 <button>Read More</button>
             </section>
         </div>
         <div class="pkg-4">
-            <img src="./content/originals/blog_1.jpg" alt="Cruise Package 4">
+            <img src="./content/originals/Carribbean.jpg" alt="Cruise Package 4">
+
             <section>
-                <h3>Title of Cruize with $price!</h3>
+                <h3>Carribbean Cruise for sale price of $870!</h3>
                 <p>
-                    Grab some real text for these descrip5ons and pase it in here. Cruise the Pacific Coast including
-                    Canada and San Francisco in Fall 2018. Larry Gelwix the “Getaway Guru®” will be your cruise host
-                    while you visit Astoria, Oregon and Victoria, B.C. Plus, spend 2 days visi5ng San Francisco! The
-                    highlight of this cruise will be sailing into and out .
+                    For a limited time, our cruise to the Carribbean is on sale! Enjoy the great beauties of what these
+                    islands have to offer! Filled with tasty food and rich cultural expereinces.
+                    You'll be able to visit historcal sites that go back centuries and the bountiful nature vistas to
+                    behold. For $870/person, you'll have everything included in the cruise package.
                 </p>
                 <button>Read More</button>
             </section>
@@ -62,4 +67,4 @@ include('_header.php')
     </div>
 </section>
 
-<?php include('_footer.php') ?>
+<?php include('_bot.php') ?>
