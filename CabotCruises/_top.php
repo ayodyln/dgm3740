@@ -36,20 +36,29 @@
             <nav>
                 <button id="hamburgerBtn">&#9776;</button>
                 <ul id="primaryNav">
-                    <li><a href="./index.php">Home</a></li>
+                    <li><a id="home-link" href="index.php"
+                            class="<?php if ($clientLocation == "home") {
+                                echo "active";
+                            } ?>">Home</a></li>
 
                     <li>
-                        <a href="./cruises.php">Cruises</a>
+                        <a id="cruise-link" href="cruises.php"
+                            class="<?php if ($clientLocation == "cruises") {
+                                echo "active";
+                            } ?>">Cruises</a>
                     </li>
 
                     <li class="parent dropdown-parent">
                         <a href="#" class="dropdown-anchor">Agents</a>
                         <ul>
-                            <li><a href="./agent-one.php">Adam Smith</a></li>
-                            <li><a href="./agent-two.php">Julia Webster</a></li>
+                            <li><a id="agent-one-link" href="agent-one.php">Adam Smith</a></li>
+                            <li><a id="agent-two-link" href="agent-two.php">Julia Webster</a></li>
                         </ul>
                     </li>
-                    <li><a href="./booking.php">Book</a></li>
+                    <li><a id="booking-link" href="booking.php"
+                            class="<?php if ($clientLocation == "book") {
+                                echo "active";
+                            } ?>">Book</a></li>
                 </ul>
             </nav>
 
@@ -66,5 +75,6 @@
             </form>
         </div>
     </section>
+
 
     <main>

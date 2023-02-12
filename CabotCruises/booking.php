@@ -1,4 +1,5 @@
 <?php
+$clientLocation = 'book';
 $title = "Book a Cruise";
 include('_top.php')
     ?>

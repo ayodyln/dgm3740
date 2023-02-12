@@ -1,4 +1,5 @@
 <?php
+$clientLocation = 'cruises';
 $title = "Cruises";
 include('_top.php')
     ?>

@@ -1,7 +1,8 @@
 <?php
+$clientLocation = 'home';
 $title = "Cabot Cruises";
 include('_top.php')
-?>
+  ?>
 
 <section id="main__wrapper">
   <div class="Slider">
