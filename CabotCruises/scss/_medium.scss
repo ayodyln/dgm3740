@@ -82,6 +82,14 @@ section#AgentsPage {
   }
 }
 
+section#BookingPage {
+  .booking {
+    form {
+      width: 33%;
+    }
+  }
+}
+
 /*  ----------------------- NAVIGATION --------------------------- */
 nav button {
   display: none;
