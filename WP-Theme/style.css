@@ -1,0 +1,1023 @@
+@charset "UTF-8";
+/*
+Theme Name: CabotCruise
+Theme URI: https://www.dylnsworks.com
+Description: First WP Theme
+Author: Dylan Smith
+Author URI: dylnsworks.com
+Version: 0.5
+*/
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+             ========================================================================== */
+/**
+           * Remove the margin in all browsers (opinionated).
+           */
+body {
+  margin: 0;
+}
+
+/**
+           * Add the correct display in IE 9-.
+           */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/**
+           * Correct the font size and margin on `h1` elements within `section` and
+           * `article` contexts in Chrome, Firefox, and Safari.
+           */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+             ========================================================================== */
+/**
+           * Add the correct display in IE 9-.
+           * 1. Add the correct display in IE.
+           */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block;
+}
+
+/**
+           * Add the correct margin in IE 8.
+           */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+           * 1. Add the correct box sizing in Firefox.
+           * 2. Show the overflow in Edge and IE.
+           */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+           * 1. Correct the inheritance and scaling of font size in all browsers.
+           * 2. Correct the odd `em` font sizing in all browsers.
+           */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+             ========================================================================== */
+/**
+           * 1. Remove the gray background on active links in IE 10.
+           * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+           */
+a {
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
+}
+
+/**
+           * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+           * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+           */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+           * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+           */
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+           * Add the correct font weight in Chrome, Edge, and Safari.
+           */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+           * 1. Correct the inheritance and scaling of font size in all browsers.
+           * 2. Correct the odd `em` font sizing in all browsers.
+           */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+           * Add the correct font style in Android 4.3-.
+           */
+dfn {
+  font-style: italic;
+}
+
+/**
+           * Add the correct background and color in IE 9-.
+           */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+           * Add the correct font size in all browsers.
+           */
+small {
+  font-size: 80%;
+}
+
+/**
+           * Prevent `sub` and `sup` elements from affecting the line height in
+           * all browsers.
+           */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+             ========================================================================== */
+/**
+           * Add the correct display in IE 9-.
+           */
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+           * Add the correct display in iOS 4-7.
+           */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+           * Remove the border on images inside links in IE 10-.
+           */
+img {
+  border-style: none;
+}
+
+/**
+           * Hide the overflow in IE.
+           */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+             ========================================================================== */
+/**
+           * 1. Change the font styles in all browsers (opinionated).
+           * 2. Remove the margin in Firefox and Safari.
+           */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+           * Show the overflow in IE.
+           * 1. Show the overflow in Edge.
+           */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+           * Remove the inheritance of text transform in Edge, Firefox, and IE.
+           * 1. Remove the inheritance of text transform in Firefox.
+           */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+           * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+           *    controls in Android 4.
+           * 2. Correct the inability to style clickable types in iOS and Safari.
+           */
+button,
+html [type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button; /* 2 */
+}
+
+/**
+           * Remove the inner border and padding in Firefox.
+           */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+           * Restore the focus styles unset by the previous rule.
+           */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+           * Correct the padding in Firefox.
+           */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+           * 1. Correct the text wrapping in Edge and IE.
+           * 2. Correct the color inheritance from `fieldset` elements in IE.
+           * 3. Remove the padding so developers are not caught out when they zero out
+           *    `fieldset` elements in all browsers.
+           */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+           * 1. Add the correct display in IE 9-.
+           * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+           */
+progress {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+           * Remove the default vertical scrollbar in IE.
+           */
+textarea {
+  overflow: auto;
+}
+
+/**
+           * 1. Add the correct box sizing in IE 10-.
+           * 2. Remove the padding in IE 10-.
+           */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+           * Correct the cursor style of increment and decrement buttons in Chrome.
+           */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+           * 1. Correct the odd appearance in Chrome and Safari.
+           * 2. Correct the outline style in Safari.
+           */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+           * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+           */
+[type=search]::-webkit-search-cancel-button,
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+           * 1. Correct the inability to style clickable types in iOS and Safari.
+           * 2. Change font properties to `inherit` in Safari.
+           */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+             ========================================================================== */
+/*
+           * Add the correct display in IE 9-.
+           * 1. Add the correct display in Edge, IE, and Firefox.
+           */
+details,
+menu {
+  display: block;
+}
+
+/*
+           * Add the correct display in all browsers.
+           */
+summary {
+  display: list-item;
+}
+
+/* Scripting
+             ========================================================================== */
+/**
+           * Add the correct display in IE 9-.
+           */
+canvas {
+  display: inline-block;
+}
+
+/**
+           * Add the correct display in IE.
+           */
+template {
+  display: none;
+}
+
+/* Hidden
+             ========================================================================== */
+/**
+           * Add the correct display in IE 10-.
+           */
+[hidden] {
+  display: none;
+}
+
+/*Adjust the media query max-width value on line 5 to match your breakpoint between the small and medium screens OR between the medium and large screens*/
+@media only screen and (max-width: 34.9375rem) {
+  /* Navigation Button  -------------------------------------------------------- */
+  nav button {
+    width: 100%;
+    padding: 0.2rem 2vw;
+    text-align: left;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+  }
+  /* Navigation Bar -------------------------------------------------------- */
+  #primaryNav {
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    z-index: 998;
+    font-weight: normal;
+    background-color: #084c61;
+    position: absolute;
+    left: 0;
+    width: 100%;
+  }
+  #primaryNav li.active a {
+    background-color: rgba(0, 0, 0, 0.25);
+  }
+  #primaryNav li a {
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    height: 100%;
+    font-size: 14px;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.15);
+    color: white;
+    text-decoration: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  #primaryNav li a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  /* Toggle the navigation bar to expand down  */
+  #primaryNav.open {
+    height: auto;
+  }
+  /* Submenus – optional .parent class indicates dropdowns */
+  #primaryNav > li:hover > a {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  #primaryNav li.parent > a:after {
+    font-size: 0.75rem;
+    content: "▼";
+    color: rgba(255, 255, 255, 0.5);
+    float: right;
+  }
+  #primaryNav li.parent > a:hover {
+    background: rgba(0, 0, 0, 0.75);
+  }
+  /*hide the sub menu items by default*/
+  #primaryNav li ul {
+    display: none;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 0;
+  }
+  #primaryNav li ul a {
+    border-top: solid 1px rgba(0, 0, 0, 0.2);
+    font-size: 12px;
+    padding: 10px 5%;
+    font-weight: normal;
+  }
+  #primaryNav li:hover ul {
+    display: block;
+  }
+} /* End Mobile Styles */
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+div#nav,
+main,
+footer {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  order: 3;
+  display: flex;
+}
+main #main__wrapper {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#header__wrapper {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  width: 100%;
+  order: 2;
+}
+#header__wrapper header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0 1rem;
+}
+#header__wrapper header #logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header__wrapper header #logo img {
+  width: 100%;
+  height: auto;
+}
+#header__wrapper header a {
+  text-decoration: none;
+  color: red;
+}
+
+#nav__wrapper {
+  background-color: #095b74;
+  padding: 2px 8px;
+  order: 1;
+}
+#nav__wrapper #nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#nav__wrapper #nav #dropdown-anchor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#nav__wrapper #nav #dropdown-anchor .dropdown-icon {
+  fill: white;
+}
+#nav__wrapper #nav #dropdown-anchor .dropdown-icon svg {
+  width: 14px;
+}
+#nav__wrapper #nav form#searchInput {
+  display: flex;
+}
+#nav__wrapper #nav form#searchInput input {
+  border-radius: 0;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  background-color: #dbeaef;
+  padding-left: 8px;
+  border: none;
+  color: black;
+  border-right: 1px white solid;
+}
+#nav__wrapper #nav form#searchInput button {
+  border-radius: 0 8px 8px 0;
+  width: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: #0f8fb7;
+  padding: 8px;
+}
+#nav__wrapper #nav form#searchInput button svg {
+  width: 75%;
+  height: auto;
+  fill: white;
+}
+
+.active {
+  background-color: #0f8fb7;
+}
+
+input[type=search] {
+  -webkit-appearance: none;
+}
+
+#BlogArticles {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 8px;
+}
+#BlogArticles div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  width: 100%;
+}
+#BlogArticles div .blogCTA {
+  width: 49%;
+  height: fit-content;
+  position: relative;
+  display: flex;
+}
+#BlogArticles div .blogCTA img {
+  width: 100%;
+  height: auto;
+}
+#BlogArticles div .blogCTA :nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+  padding: 8px 0;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#BlogArticles div .blogCTA :nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 8px 0;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#contactUs__wrapper {
+  background-color: #053544;
+  color: white;
+  order: 4;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 8px;
+  margin-top: 1rem;
+}
+#contactUs__wrapper #AboutUs {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+#contactUs__wrapper #AboutUs #Contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#contactUs__wrapper #AboutUs #Contact h2 {
+  margin-bottom: 0.5rem;
+}
+#contactUs__wrapper #AboutUs #Contact section h3 {
+  margin: 0;
+  margin-bottom: 0.25rem;
+}
+#contactUs__wrapper #AboutUs #Contact section p {
+  margin: 0;
+}
+#contactUs__wrapper #AboutUs #Contact section a {
+  text-decoration: none;
+  color: white;
+}
+#contactUs__wrapper #AboutUs #Contact section a:hover {
+  text-decoration: underline;
+}
+#contactUs__wrapper #AboutUs #Contact section form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 12px;
+}
+#contactUs__wrapper #AboutUs #Contact section form input {
+  height: 32px;
+}
+#contactUs__wrapper #AboutUs #Contact section form button {
+  border-radius: 12px;
+  height: 44px;
+}
+
+#socials__wrapper {
+  padding: 10px;
+  background-color: #074456;
+  order: 5;
+}
+#socials__wrapper #socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  fill: white;
+}
+#socials__wrapper #socials svg {
+  width: 36px;
+}
+
+#footer__wrapper {
+  background-color: #084c61;
+  color: white;
+  padding: 8px;
+  order: 6;
+}
+#footer__wrapper footer {
+  text-align: center;
+}
+#footer__wrapper footer a {
+  text-decoration: none;
+  color: white;
+}
+#footer__wrapper footer a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.Slider picture img {
+  width: 100%;
+  height: auto;
+}
+
+section#CruisesPage {
+  height: 100%;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+}
+section#CruisesPage .cruises {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  height: 100%;
+}
+section#CruisesPage .cruises div {
+  width: 100%;
+}
+section#CruisesPage .cruises div img {
+  width: 100%;
+  height: auto;
+}
+section#CruisesPage .cruises div section {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  height: 100%;
+}
+section#CruisesPage .cruises div section h3 {
+  margin: 0;
+}
+section#CruisesPage .cruises div section p {
+  margin: 0;
+}
+section#CruisesPage .cruises div section button {
+  height: 44px;
+  border-radius: 14px;
+  align-self: end;
+  width: fit-content;
+  border: none;
+  width: 120px;
+  cursor: pointer;
+  background-color: #053544;
+  color: white;
+}
+section#CruisesPage .cruises div section button:hover {
+  background-color: #095b74;
+}
+
+section#AgentsPage {
+  height: fit-content;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+}
+section#AgentsPage .agents {
+  height: 100%;
+}
+section#AgentsPage .agents img {
+  width: 100%;
+  height: auto;
+}
+section#AgentsPage .agents div {
+  margin: 8px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+section#AgentsPage .agents div h3 {
+  margin: 0;
+}
+section#AgentsPage .agents div a {
+  text-decoration: none;
+  color: #074456;
+}
+section#AgentsPage .agents div a:hover {
+  text-decoration: underline;
+}
+section#AgentsPage .agents div p {
+  margin: 0;
+  font-size: 20px;
+}
+section#AgentsPage .agents :nth-last-child(1) {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+section#BookingPage {
+  height: fit-content;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+section#BookingPage .booking {
+  width: 100%;
+}
+section#BookingPage .booking form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+section#BookingPage .booking form button {
+  height: 44px;
+  background-color: #053544;
+  color: white;
+  cursor: pointer;
+  border-radius: 15px;
+  border: none;
+}
+section#BookingPage .booking form button:hover {
+  background-color: #084c61;
+}
+section#BookingPage .booking form div {
+  display: flex;
+  flex-direction: column;
+}
+section#BookingPage .booking form div input {
+  height: 36px;
+  width: 100%;
+}
+section#BookingPage .booking form div select {
+  height: 36px;
+  width: 100%;
+}
+
+@media only screen and (min-width: 560px) {
+  #header__wrapper {
+    order: 1;
+  }
+  #nav__wrapper {
+    order: 2;
+  }
+  #BlogArticles div {
+    gap: 1.5%;
+    width: 100%;
+  }
+  #BlogArticles div .blogCTA {
+    width: 32.33%;
+  }
+  #contactUs__wrapper #AboutUs #Contact {
+    display: grid;
+    gap: 0;
+    grid-template-areas: "address news" "phone news" "hours .";
+  }
+  #contactUs__wrapper #AboutUs #Contact #address__section {
+    grid-area: address;
+  }
+  #contactUs__wrapper #AboutUs #Contact #phone__section {
+    grid-area: phone;
+  }
+  #contactUs__wrapper #AboutUs #Contact #hours__section {
+    grid-area: hours;
+  }
+  #contactUs__wrapper #AboutUs #Contact #news__section {
+    grid-area: news;
+    margin-left: 1rem;
+    width: 60%;
+  }
+  section#CruisesPage .cruises div {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+  }
+  section#CruisesPage .cruises div img {
+    width: 33%;
+  }
+  section#CruisesPage .cruises div section {
+    width: 66%;
+  }
+  section#AgentsPage .agents {
+    position: relative;
+  }
+  section#AgentsPage .agents img {
+    width: 300px;
+    float: right;
+    margin-left: 1rem;
+  }
+  section#BookingPage .booking form {
+    width: 33%;
+  }
+  /*  ----------------------- NAVIGATION --------------------------- */
+  nav button {
+    display: none;
+  }
+  nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    list-style: none;
+  }
+  nav ul li {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  nav ul li a {
+    display: block;
+    border: none;
+    font-size: 1rem;
+    padding: 1rem;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    /*transition*/
+    -webkit-transition: background 0.3s linear;
+    transition: background 0.3s linear;
+  }
+  nav ul li a:hover {
+    background: #04242e;
+  }
+  nav ul li ul {
+    z-index: 99;
+    position: absolute;
+    background-color: #084c61;
+    left: -999rem;
+    width: 12rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  nav ul li ul li {
+    width: 12rem;
+    border-right: none;
+    border-top: solid 1px rgba(0, 0, 0, 0.2);
+  }
+  nav ul li:hover ul {
+    /* this displays the menus as drop downs  */
+    left: auto;
+    margin-left: 0;
+  }
+  nav li.active a {
+    background-color: rgba(0, 0, 0, 0.25);
+  }
+}
+@media only screen and (min-width: 1028px) and (min-width: 1600px) {
+  #BlogArticles {
+    padding: 0;
+  }
+  #nav__wrapper {
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 1028px) {
+  #BlogArticles {
+    margin-bottom: 5rem;
+  }
+  #BlogArticles div {
+    gap: 1%;
+    width: 100%;
+  }
+  #BlogArticles div .blogCTA {
+    width: 24.2%;
+  }
+}
+@media only screen and (min-width: 1028px) {
+  #contactUs__wrapper #AboutUs {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1%;
+  }
+  #contactUs__wrapper #AboutUs #Contact {
+    width: 66%;
+    grid-template-columns: 1fr 1fr;
+  }
+  #contactUs__wrapper #AboutUs #Contact #address__section {
+    grid-area: address;
+  }
+  #contactUs__wrapper #AboutUs #Contact #phone__section {
+    grid-area: phone;
+  }
+  #contactUs__wrapper #AboutUs #Contact #hours__section {
+    grid-area: hours;
+  }
+  #contactUs__wrapper #AboutUs #Contact #news__section {
+    grid-area: news;
+    margin-left: 0;
+    width: 100%;
+  }
+  #contactUs__wrapper #AboutUs #WhyCabotCruise {
+    width: 33%;
+  }
+}/*# sourceMappingURL=style.css.map */
