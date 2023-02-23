@@ -8,7 +8,7 @@ include('_top.php')
         <?php echo $title; ?>
     </h1>
     <div class="agents">
-        <img src="./content/originals/AgentOne.jpg" alt="Adam Smith">
+        <img src="/cabotcruise-content/originals/AgentOne.jpg" alt="Adam Smith">
         <div>
             <h3>Phone:</h3>
             <a href="tel:+1-800-123-1234">1-800-123-1234</a>

@@ -1,5 +1,9 @@
 /*Adjust the media query max-width value on line 5 to match your breakpoint between the small and medium screens OR between the medium and large screens*/
 
+#primaryNav li.current-menu-item a {
+  background-color: #0e82a5;
+}
+
 // must be 1px less that the medium css breakpoint!!!
 @media only screen and (max-width: 34.9375rem) {
   /* Navigation Button  -------------------------------------------------------- */

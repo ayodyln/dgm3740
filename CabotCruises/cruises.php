@@ -10,7 +10,7 @@ include('_top.php')
     </h1>
     <div class="cruises">
         <div class="pkg-1">
-            <img src="./content/originals/new-zealand.jpg" alt="Cruise Package 1">
+            <img src="/cabotcruise-content/originals/new-zealand.jpg" alt="Cruise Package 1">
 
             <section>
                 <h3>Australia & New Zealand Cruises from $999!</h3>
@@ -23,7 +23,7 @@ include('_top.php')
             </section>
         </div>
         <div class="pkg-2">
-            <img src="./content/originals/Hawaii.jpg" alt="Cruise Package 2">
+            <img src="/cabotcruise-content/originals/Hawaii.jpg" alt="Cruise Package 2">
 
             <section>
                 <h3>Hawaii Cruise for the family, from $899!</h3>
@@ -38,7 +38,7 @@ include('_top.php')
             </section>
         </div>
         <div class="pkg-3">
-            <img src="./content/originals/Alaska.jpg" alt="Cruise Package 3">
+            <img src="/cabotcruise-content/originals/Alaska.jpg" alt="Cruise Package 3">
 
             <section>
                 <h3>Alaskan Cruise from $950!</h3>
@@ -52,7 +52,7 @@ include('_top.php')
             </section>
         </div>
         <div class="pkg-4">
-            <img src="./content/originals/Carribbean.jpg" alt="Cruise Package 4">
+            <img src="/cabotcruise-content/originals/Carribbean.jpg" alt="Cruise Package 4">
 
             <section>
                 <h3>Carribbean Cruise for sale price of $870!</h3>
