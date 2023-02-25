@@ -155,3 +155,46 @@ nav {
     background-color: rgba(0, 0, 0, 0.25);
   }
 } // end nav
+
+div#AboutUs_Page {
+  display: grid;
+  gap: 12px;
+  grid-template-areas: "About Reviews" "dest dest";
+
+  section h2 {
+  }
+
+  #aboutus {
+    grid-area: About;
+  }
+
+  #destinations {
+    grid-area: dest;
+    div {
+      flex-direction: row;
+      flex-wrap: wrap;
+      section {
+        margin: auto;
+        width: 49%;
+        div {
+          h3 {
+          }
+        }
+
+        section {
+          width: 100%;
+          img {
+          }
+        }
+      }
+    }
+  }
+
+  #reviews {
+    grid-area: Reviews;
+  }
+
+  .divider {
+    display: none;
+  }
+}

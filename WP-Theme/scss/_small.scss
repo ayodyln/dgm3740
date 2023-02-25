@@ -23,7 +23,6 @@ h2 {
 
 main {
   width: 100%;
-  // height: 100%;
 
   order: 3;
   display: flex;
@@ -450,5 +449,62 @@ section#BookingPage {
         }
       }
     }
+  }
+}
+
+div#AboutUs_Page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 4px;
+
+  section h2 {
+    margin-bottom: 12px;
+  }
+
+  #destinations {
+    display: flex;
+    flex-direction: column;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      section {
+        height: 200px;
+        position: relative;
+        display: flex;
+        div {
+          background-color: rgba(0, 0, 0, 0.35);
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 4;
+
+          h3 {
+            margin: 0;
+            font-size: 32px;
+            color: white;
+          }
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .divider {
+    width: 100%;
+    height: 4px;
+    background-color: #000000;
+    margin: 12px 0;
   }
 }

@@ -45,7 +45,7 @@ include('_top.php')
     <div>
       <div class="blogCTA">
         <div class="blog_title">
-          Caribbean Cruises
+          <p>Caribbean Cruises</p>
         </div>
         <div class="blogImg">
           <img src="/cabotcruise-content/articles/blog_1-square.jpg" alt="Article 1" />

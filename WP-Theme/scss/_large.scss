@@ -53,3 +53,45 @@
     }
   }
 }
+
+div#AboutUs_Page {
+  display: grid;
+  grid-template-areas: "About dest Reviews";
+
+  section h2 {
+  }
+
+  #aboutus {
+    grid-area: About;
+  }
+
+  #destinations {
+    grid-area: dest;
+    div {
+      flex-direction: row;
+      flex-wrap: wrap;
+      section {
+        margin: auto;
+        width: 49%;
+        div {
+          h3 {
+          }
+        }
+
+        section {
+          width: 100%;
+          img {
+          }
+        }
+      }
+    }
+  }
+
+  #reviews {
+    grid-area: Reviews;
+  }
+
+  .divider {
+    display: none;
+  }
+}
