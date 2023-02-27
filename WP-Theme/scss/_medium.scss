@@ -168,23 +168,20 @@ div#AboutUs_Page {
     grid-area: About;
   }
 
-  #destinations {
+  #packages {
     grid-area: dest;
+    h2 {
+    }
+
     div {
-      flex-direction: row;
-      flex-wrap: wrap;
-      section {
-        margin: auto;
-        width: 49%;
-        div {
-          h3 {
-          }
+      #pkg1 {
+        .pkg_heading {
         }
 
-        section {
-          width: 100%;
-          img {
-          }
+        p {
+        }
+
+        button {
         }
       }
     }
@@ -196,5 +193,21 @@ div#AboutUs_Page {
 
   .divider {
     display: none;
+  }
+}
+
+#gallery_page {
+  .images {
+    gap: 4px;
+    figure {
+      width: 33%;
+      margin: 0;
+      margin: auto;
+      img {
+      }
+
+      figcaption {
+      }
+    }
   }
 }

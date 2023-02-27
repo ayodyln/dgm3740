@@ -65,26 +65,7 @@ div#AboutUs_Page {
     grid-area: About;
   }
 
-  #destinations {
-    grid-area: dest;
-    div {
-      flex-direction: row;
-      flex-wrap: wrap;
-      section {
-        margin: auto;
-        width: 49%;
-        div {
-          h3 {
-          }
-        }
-
-        section {
-          width: 100%;
-          img {
-          }
-        }
-      }
-    }
+  #packages {
   }
 
   #reviews {
@@ -93,5 +74,22 @@ div#AboutUs_Page {
 
   .divider {
     display: none;
+  }
+}
+
+#gallery_page {
+  .images {
+    gap: 1%;
+    width: 100%;
+    figure {
+      width: 24%;
+      margin: 0;
+      margin: auto;
+      img {
+      }
+
+      figcaption {
+      }
+    }
   }
 }

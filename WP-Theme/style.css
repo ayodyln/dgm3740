@@ -856,7 +856,6 @@ section#BookingPage .booking form {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
 }
 section#BookingPage .booking form button {
   height: 44px;
@@ -869,15 +868,14 @@ section#BookingPage .booking form button {
 section#BookingPage .booking form button:hover {
   background-color: #084c61;
 }
-section#BookingPage .booking form div {
-  display: flex;
-  flex-direction: column;
+section#BookingPage .booking form label {
+  display: block;
 }
-section#BookingPage .booking form div input {
+section#BookingPage .booking form label input {
   height: 36px;
   width: 100%;
 }
-section#BookingPage .booking form div select {
+section#BookingPage .booking form label select {
   height: 36px;
   width: 100%;
 }
@@ -892,45 +890,95 @@ div#AboutUs_Page {
 div#AboutUs_Page section h2 {
   margin-bottom: 12px;
 }
-div#AboutUs_Page #destinations {
-  display: flex;
-  flex-direction: column;
-}
-div#AboutUs_Page #destinations div {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-div#AboutUs_Page #destinations div section {
-  height: 200px;
-  position: relative;
-  display: flex;
-}
-div#AboutUs_Page #destinations div section div {
-  background-color: rgba(0, 0, 0, 0.35);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 4;
-}
-div#AboutUs_Page #destinations div section div h3 {
-  margin: 0;
-  font-size: 32px;
+div#AboutUs_Page #packages div div {
+  margin: 8px 0;
+  background-color: #074456;
   color: white;
+  border-radius: 15px;
+  padding: 4px;
 }
-div#AboutUs_Page #destinations div section img {
-  width: 100%;
+div#AboutUs_Page #packages div div .pkg_heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+div#AboutUs_Page #packages div div .pkg_heading h2,
+div#AboutUs_Page #packages div div .pkg_heading h3 {
+  margin: 0;
+}
+div#AboutUs_Page #packages div div button {
+  height: 44px;
+  border-radius: 10px;
 }
 div#AboutUs_Page .divider {
   width: 100%;
   height: 4px;
   background-color: #000000;
   margin: 12px 0;
+}
+
+#gallery_page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 4px;
+}
+#gallery_page .images {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  padding: 4px;
+  gap: 4px;
+}
+#gallery_page .images figure {
+  width: 49%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: flex;
+}
+#gallery_page .images figure img {
+  width: 100%;
+}
+#gallery_page .images figure figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.422);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+}
+
+#location_page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding: 4px;
+}
+#location_page .location section {
+  margin: 8px 0;
+}
+#location_page .location section a {
+  text-decoration: none;
+  color: #000000;
+}
+#location_page .location section a p {
+  margin: 0;
+}
+#location_page .location section a:hover {
+  text-decoration: #053544;
+  cursor: pointer;
+}
+#location_page .location section iframe {
+  width: 100%;
+  height: 600px;
 }
 
 @media only screen and (min-width: 560px) {
@@ -1048,25 +1096,22 @@ div#AboutUs_Page .divider {
   div#AboutUs_Page #aboutus {
     grid-area: About;
   }
-  div#AboutUs_Page #destinations {
+  div#AboutUs_Page #packages {
     grid-area: dest;
-  }
-  div#AboutUs_Page #destinations div {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  div#AboutUs_Page #destinations div section {
-    margin: auto;
-    width: 49%;
-  }
-  div#AboutUs_Page #destinations div section section {
-    width: 100%;
   }
   div#AboutUs_Page #reviews {
     grid-area: Reviews;
   }
   div#AboutUs_Page .divider {
     display: none;
+  }
+  #gallery_page .images {
+    gap: 4px;
+  }
+  #gallery_page .images figure {
+    width: 33%;
+    margin: 0;
+    margin: auto;
   }
 }
 @media only screen and (min-width: 1028px) and (min-width: 1600px) {
@@ -1126,24 +1171,21 @@ div#AboutUs_Page .divider {
   div#AboutUs_Page #aboutus {
     grid-area: About;
   }
-  div#AboutUs_Page #destinations {
-    grid-area: dest;
-  }
-  div#AboutUs_Page #destinations div {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  div#AboutUs_Page #destinations div section {
-    margin: auto;
-    width: 49%;
-  }
-  div#AboutUs_Page #destinations div section section {
-    width: 100%;
-  }
   div#AboutUs_Page #reviews {
     grid-area: Reviews;
   }
   div#AboutUs_Page .divider {
     display: none;
+  }
+}
+@media only screen and (min-width: 1028px) {
+  #gallery_page .images {
+    gap: 1%;
+    width: 100%;
+  }
+  #gallery_page .images figure {
+    width: 24%;
+    margin: 0;
+    margin: auto;
   }
 }/*# sourceMappingURL=style.css.map */
