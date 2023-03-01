@@ -436,6 +436,7 @@ section#BookingPage {
 
       label {
         display: block;
+        margin: 0.5rem 0;
 
         input {
           height: 36px;
@@ -517,9 +518,8 @@ div#AboutUs_Page {
     gap: 4px;
 
     figure {
-      // height: 300px;
-      width: 49%;
-      // margin: auto;
+      width: 100%;
+      height: auto;
       margin: 0;
       padding: 0;
       position: relative;
@@ -527,6 +527,7 @@ div#AboutUs_Page {
 
       img {
         width: 100%;
+        height: auto;
       }
 
       figcaption {

@@ -870,6 +870,7 @@ section#BookingPage .booking form button:hover {
 }
 section#BookingPage .booking form label {
   display: block;
+  margin: 0.5rem 0;
 }
 section#BookingPage .booking form label input {
   height: 36px;
@@ -932,7 +933,8 @@ div#AboutUs_Page .divider {
   gap: 4px;
 }
 #gallery_page .images figure {
-  width: 49%;
+  width: 100%;
+  height: auto;
   margin: 0;
   padding: 0;
   position: relative;
@@ -940,6 +942,7 @@ div#AboutUs_Page .divider {
 }
 #gallery_page .images figure img {
   width: 100%;
+  height: auto;
 }
 #gallery_page .images figure figcaption {
   position: absolute;
@@ -1105,14 +1108,6 @@ div#AboutUs_Page .divider {
   div#AboutUs_Page .divider {
     display: none;
   }
-  #gallery_page .images {
-    gap: 4px;
-  }
-  #gallery_page .images figure {
-    width: 33%;
-    margin: 0;
-    margin: auto;
-  }
 }
 @media only screen and (min-width: 1028px) and (min-width: 1600px) {
   #BlogArticles {
@@ -1176,16 +1171,5 @@ div#AboutUs_Page .divider {
   }
   div#AboutUs_Page .divider {
     display: none;
-  }
-}
-@media only screen and (min-width: 1028px) {
-  #gallery_page .images {
-    gap: 1%;
-    width: 100%;
-  }
-  #gallery_page .images figure {
-    width: 24%;
-    margin: 0;
-    margin: auto;
   }
 }/*# sourceMappingURL=style.css.map */
