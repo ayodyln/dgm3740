@@ -11,7 +11,17 @@
     <link rel="stylesheet" type="text/css"
         href="<?php echo get_template_directory_uri(); ?>/slick-1.8.1/slick/slick-theme.css" />
 
-
+    <script src="https://www.google.com/recaptcha/api.js?render=6LcyZR8lAAAAAJybyFcQihPmax7x3FOnBfpNf_4F"></script>
+    <script>
+        function onClick(e) {
+            e.preventDefault();
+            grecaptcha.ready(function () {
+                grecaptcha.execute('6LcyZR8lAAAAAJybyFcQihPmax7x3FOnBfpNf_4F', { action: 'submit' }).then(function (token) {
+                    // Add your logic to submit to your backend server here.
+                });
+            });
+        }
+    </script>
     <title>
         <?php echo wp_title(); ?>
     </title>

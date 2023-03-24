@@ -512,6 +512,7 @@ h2 {
 
 main {
   width: 100%;
+  height: 100%;
   order: 3;
   display: flex;
 }
@@ -982,6 +983,38 @@ div#AboutUs_Page .divider {
 #location_page .location section iframe {
   width: 100%;
   height: 600px;
+}
+
+#ContactPage {
+  padding: 4px;
+  width: 100%;
+  height: 100%;
+  max-width: 22rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#ContactPage h1 {
+  margin: 0;
+  width: 100%;
+  text-align: left;
+}
+#ContactPage .wpcf7 form input[type=text],
+#ContactPage .wpcf7 form input[type=tel],
+#ContactPage .wpcf7 form input[type=email] {
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+#ContactPage .wpcf7 form textarea {
+  resize: none;
+  border-radius: 10px;
+  padding: 8px;
+}
+#ContactPage .wpcf7 form input[type=submit] {
+  padding: 14px;
+  border-radius: 10px;
 }
 
 @media only screen and (min-width: 560px) {
