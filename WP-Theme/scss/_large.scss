@@ -9,11 +9,25 @@
 
 #BlogArticles {
   margin-bottom: 5rem;
+
+  h2 {
+  }
+
   div {
-    gap: 1%;
-    width: 100%;
-    .blogCTA {
+    div {
       width: 24.2%;
+      a {
+        .blog_title {
+        }
+
+        .blogImg {
+          img {
+          }
+        }
+
+        .blog_date {
+        }
+      }
     }
   }
 }
@@ -56,40 +70,77 @@
 
 div#AboutUs_Page {
   display: grid;
-  grid-template-areas: "About dest Reviews";
-
-  section h2 {
-  }
+  grid-template-areas:
+    "bio r pkg"
+    "bio r pkg";
+ 
+  gap: 1rem;
 
   #aboutus {
-    grid-area: About;
+    grid-area: bio;
+
+    h2 {
+    }
+
+    figure {
+      img {
+      }
+    }
+
+    div {
+      p {
+      }
+    }
+
+    p {
+      a {
+      }
+      a:hover {
+      }
+    }
   }
 
   #packages {
+    grid-area: pkg;
+    border: none;
+    padding: 0;
+    h2 {
+    }
+
+    div#pkg-list {
+      div {
+        .pkg_heading {
+          h3,
+          h4 {
+          }
+        }
+
+        .pkg_text {
+          p {
+          }
+        }
+
+        .readmore {
+          a {
+          }
+          a:hover {
+          }
+        }
+      }
+    }
   }
 
   #reviews {
-    grid-area: Reviews;
-  }
+    grid-area: r;
 
-  .divider {
-    display: none;
+    h2 {
+    }
+
+    div {
+      section {
+        p {
+        }
+      }
+    }
   }
 }
-
-// #gallery_page {
-//   .images {
-//     gap: 1%;
-//     width: 100%;
-//     figure {
-//       width: 24%;
-//       margin: 0;
-//       margin: auto;
-//       img {
-//       }
-
-//       figcaption {
-//       }
-//     }
-//   }
-// }

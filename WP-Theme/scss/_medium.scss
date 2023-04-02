@@ -5,14 +5,32 @@
   order: 2;
 }
 
-//
-
 #BlogArticles {
+  h2 {
+  }
+
   div {
-    gap: 1.5%;
     width: 100%;
-    .blogCTA {
+    flex-wrap: wrap;
+    flex-direction: row;
+    div {
       width: 32.33%;
+      a {
+        width: 100%;
+        .blog_title {
+          justify-content: center;
+        }
+
+        .blogImg {
+          width: 100%;
+          img {
+          }
+        }
+
+        .blog_date {
+          justify-content: center;
+        }
+      }
     }
   }
 }
@@ -158,56 +176,77 @@ nav {
 
 div#AboutUs_Page {
   display: grid;
-  gap: 12px;
-  grid-template-areas: "About Reviews" "dest dest";
-
-  section h2 {
-  }
+  grid-template-areas:
+    "bio pkg"
+    "r pkg"
+    "r pkg";
+  gap: 1rem;
 
   #aboutus {
-    grid-area: About;
-  }
+    grid-area: bio;
 
-  #packages {
-    grid-area: dest;
     h2 {
     }
 
+    figure {
+      img {
+      }
+    }
+
     div {
-      #pkg1 {
+      p {
+      }
+    }
+
+    p {
+      a {
+      }
+      a:hover {
+      }
+    }
+  }
+
+  #packages {
+    grid-area: pkg;
+    border: none;
+    padding: 0;
+    h2 {
+    }
+
+    div#pkg-list {
+      div {
         .pkg_heading {
+          h3,
+          h4 {
+          }
         }
 
-        p {
+        .pkg_text {
+          p {
+          }
         }
 
-        button {
+        .readmore {
+          a {
+          }
+          a:hover {
+          }
         }
       }
     }
   }
 
   #reviews {
-    grid-area: Reviews;
-  }
+    grid-area: r;
 
-  .divider {
-    display: none;
+    h2 {
+    }
+
+    div {
+      section {
+        p {
+        }
+      }
+    }
   }
 }
-
-// #gallery_page {
-//   .images {
-//     gap: 4px;
-//     figure {
-//       width: 33%;
-//       margin: 0;
-//       margin: auto;
-//       img {
-//       }
-
-//       figcaption {
-//       }
-//     }
-//   }
-// }

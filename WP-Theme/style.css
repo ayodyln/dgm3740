@@ -512,15 +512,21 @@ h2 {
 
 main {
   width: 100%;
-  height: 100%;
   order: 3;
   display: flex;
+  flex-direction: column;
+}
+main h1 {
+  width: 50rem;
+  margin: auto;
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 main #main__wrapper {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 #header__wrapper {
@@ -610,61 +616,61 @@ input[type=search] {
 #BlogArticles {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  padding: 0 8px;
+  padding: 4px;
+}
+#BlogArticles section {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  margin: 0.5rem 0;
+  width: 100%;
+}
+#BlogArticles section h2 {
+  margin: 0;
+}
+#BlogArticles section p {
+  margin: 0;
 }
 #BlogArticles div {
   display: flex;
-  flex-wrap: wrap;
-  gap: 4px;
-  width: 100%;
+  flex-direction: column;
+  display: flex;
+  gap: 8px;
 }
-#BlogArticles div .blogCTA {
-  width: 49%;
-  height: auto;
+#BlogArticles div div p {
+  display: none;
+}
+#BlogArticles div div a {
+  width: 100%;
+  height: fit-content;
   position: relative;
+  text-decoration: none;
+  color: white;
   display: flex;
+  overflow: hidden;
 }
-#BlogArticles div .blogCTA div.blogImg {
-  display: flex;
-}
-#BlogArticles div .blogCTA div.blogImg img {
-  width: 100%;
-}
-#BlogArticles div .blogCTA .blog_title {
+#BlogArticles div div a .blog_title {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  font-size: 20px;
-  text-align: center;
-  padding: 8px 0;
-  margin: 0;
-  color: white;
-  z-index: 2;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-#BlogArticles div .blogCTA .blog_title p {
-  margin: 0;
+  background-color: rgba(0, 0, 0, 0.422);
   width: 100%;
   text-align: center;
+  font-size: 1.5rem;
+  padding: 4px;
 }
-#BlogArticles div .blogCTA .blog_date {
+#BlogArticles div div a .blogImg img {
+  width: 100%;
+}
+#BlogArticles div div a .blog_date {
   position: absolute;
   bottom: 0;
   left: 0;
+  background-color: rgba(0, 0, 0, 0.422);
   width: 100%;
   text-align: center;
-  padding: 8px 0;
-  margin: 0;
-  color: white;
-  z-index: 2;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-#BlogArticles div .blogCTA .blog_date p {
-  margin: 0;
-  width: 100%;
-  text-align: center;
+  font-size: 1.25rem;
+  padding: 4px;
 }
 
 #contactUs__wrapper {
@@ -675,7 +681,6 @@ input[type=search] {
   flex-direction: column;
   gap: 2rem;
   padding: 8px;
-  margin-top: 1rem;
 }
 #contactUs__wrapper #AboutUs {
   max-width: 1200px;
@@ -810,6 +815,9 @@ section#AgentsPage {
   display: flex;
   flex-direction: column;
 }
+section#AgentsPage h1 {
+  margin: 0;
+}
 section#AgentsPage .agents {
   height: 100%;
 }
@@ -883,42 +891,82 @@ section#BookingPage .booking form label select {
 }
 
 div#AboutUs_Page {
-  width: 100%;
+  padding: 4px;
   display: flex;
   flex-direction: column;
-  height: 100%;
-  padding: 4px;
+  gap: 0.5rem;
 }
-div#AboutUs_Page section h2 {
-  margin-bottom: 12px;
+div#AboutUs_Page #aboutus h2 {
+  margin-bottom: 0.5rem;
 }
-div#AboutUs_Page #packages div div {
-  margin: 8px 0;
-  background-color: #074456;
-  color: white;
-  border-radius: 15px;
-  padding: 4px;
-}
-div#AboutUs_Page #packages div div .pkg_heading {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-div#AboutUs_Page #packages div div .pkg_heading h2,
-div#AboutUs_Page #packages div div .pkg_heading h3 {
+div#AboutUs_Page #aboutus figure {
   margin: 0;
+  display: flex;
 }
-div#AboutUs_Page #packages div div button {
+div#AboutUs_Page #aboutus figure img {
+  width: 100%;
+  height: auto;
+}
+div#AboutUs_Page #aboutus div p {
+  margin: 0.5rem 0;
+}
+div#AboutUs_Page #aboutus p a {
+  text-decoration: none;
+  color: white;
+  background-color: #1c85a4;
+  padding: 8px;
   height: 44px;
   border-radius: 10px;
 }
-div#AboutUs_Page .divider {
-  width: 100%;
-  height: 4px;
-  background-color: #000000;
-  margin: 12px 0;
+div#AboutUs_Page #aboutus p a:hover {
+  background-color: #27809b;
 }
-
+div#AboutUs_Page #packages {
+  border-top: solid 2px black;
+  border-bottom: solid 2px black;
+  padding: 8px 0;
+}
+div#AboutUs_Page #packages h2 {
+  margin-bottom: 0.5rem;
+}
+div#AboutUs_Page #packages div#pkg-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+div#AboutUs_Page #packages div#pkg-list div {
+  background-color: #095b74;
+  color: white;
+  border-radius: 10px;
+  padding: 4px;
+}
+div#AboutUs_Page #packages div#pkg-list div .pkg_heading h3,
+div#AboutUs_Page #packages div#pkg-list div .pkg_heading h4 {
+  margin: 0;
+}
+div#AboutUs_Page #packages div#pkg-list div .pkg_heading p {
+  display: none;
+}
+div#AboutUs_Page #packages div#pkg-list div .pkg_text p {
+  margin: 0.25rem 0;
+}
+div#AboutUs_Page #packages div#pkg-list div .readmore {
+  margin-top: 1rem;
+}
+div#AboutUs_Page #packages div#pkg-list div .readmore a {
+  text-decoration: none;
+  color: white;
+  background-color: #1c85a4;
+  padding: 8px;
+  height: 44px;
+  border-radius: 10px;
+}
+div#AboutUs_Page #packages div#pkg-list div .readmore a:hover {
+  background-color: #27809b;
+}
+div#AboutUs_Page #reviews h2 {
+  margin-bottom: 0.5rem;
+}
 #gallery_page {
   width: 100%;
   display: flex;
@@ -966,6 +1014,9 @@ div#AboutUs_Page .divider {
   width: 100%;
   padding: 4px;
 }
+#location_page h1 {
+  margin: 0;
+}
 #location_page .location section {
   margin: 8px 0;
 }
@@ -1000,6 +1051,14 @@ div#AboutUs_Page .divider {
   width: 100%;
   text-align: left;
 }
+#ContactPage .wpcf7 form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+#ContactPage .wpcf7 form p {
+  margin: 0;
+}
 #ContactPage .wpcf7 form input[type=text],
 #ContactPage .wpcf7 form input[type=tel],
 #ContactPage .wpcf7 form input[type=email] {
@@ -1016,6 +1075,124 @@ div#AboutUs_Page .divider {
   padding: 14px;
   border-radius: 10px;
 }
+#ContactPage .wpcf7 form :nth-last-child(2) {
+  place-self: end;
+}
+
+#newsPage {
+  padding: 4px;
+  height: 100%;
+  display: flex;
+  max-width: 50rem;
+  margin: auto;
+}
+#newsPage div {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+#newsPage div .news_pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+#newsPage div .news_pagination a {
+  background-color: #074456;
+  color: white;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+}
+#newsPage div .news_pagination a:hover {
+  background-color: #095b74;
+}
+#newsPage div .news_pagination a.next,
+#newsPage div .news_pagination a.prev {
+  width: unset;
+  height: unset;
+  background-color: unset;
+  color: black;
+  text-decoration: underline;
+}
+#newsPage div .news {
+  background-color: #dadada;
+  height: fit-content;
+  margin: 0.5rem 0;
+  padding: 4px;
+}
+#newsPage div .news div div.news-content {
+  gap: 4px;
+  flex-direction: row;
+  height: 100%;
+}
+#newsPage div .news div div.news-content .date-post {
+  width: 25%;
+  max-width: 5rem;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #095b74;
+}
+#newsPage div .news div div.news-content .date-post h2,
+#newsPage div .news div div.news-content .date-post p {
+  margin: 0;
+}
+#newsPage div .news div div.news-content .post-content-text {
+  display: flex;
+  gap: 4px;
+}
+#newsPage div .news div div.news-content .post-content-text .news-title {
+  margin: 0;
+}
+#newsPage div .news div div.news-content .post-content-text .news-title a {
+  text-decoration: none;
+  color: black;
+}
+#newsPage div .news div div.news-content .post-content-text .news-title a:hover {
+  text-decoration: underline;
+}
+#newsPage div .news div div.news-content .post-content-text .news-cat a {
+  background-color: #074456;
+  color: white;
+  text-decoration: none;
+  width: 5rem;
+  text-align: center;
+  border-radius: 10px;
+}
+#newsPage div .news div div.news-content .post-content-text .news-cat a:hover {
+  background-color: #095b74;
+}
+#newsPage div .news div div.news-content .post-content-text .news-content-excerpt {
+  gap: 4px;
+}
+#newsPage div .news div div.news-content .post-content-text .news-content-excerpt a {
+  color: black;
+}
+#newsPage div .news div div.news-content .post-content-text .news-content-excerpt a:hover {
+  color: #084c61;
+}
+
+div#newsStory {
+  padding: 4px;
+  height: 100%;
+  max-width: 50rem;
+  margin: auto;
+}
+div#newsStory img {
+  float: right;
+  width: 200px;
+  height: auto;
+}
+div#newsStory p {
+  margin: 0;
+}
 
 @media only screen and (min-width: 560px) {
   #header__wrapper {
@@ -1025,11 +1202,24 @@ div#AboutUs_Page .divider {
     order: 2;
   }
   #BlogArticles div {
-    gap: 1.5%;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  #BlogArticles div div {
+    width: 32.33%;
+  }
+  #BlogArticles div div a {
     width: 100%;
   }
-  #BlogArticles div .blogCTA {
-    width: 32.33%;
+  #BlogArticles div div a .blog_title {
+    justify-content: center;
+  }
+  #BlogArticles div div a .blogImg {
+    width: 100%;
+  }
+  #BlogArticles div div a .blog_date {
+    justify-content: center;
   }
   #contactUs__wrapper #AboutUs #Contact {
     display: grid;
@@ -1126,20 +1316,19 @@ div#AboutUs_Page .divider {
   }
   div#AboutUs_Page {
     display: grid;
-    gap: 12px;
-    grid-template-areas: "About Reviews" "dest dest";
+    grid-template-areas: "bio pkg" "r pkg" "r pkg";
+    gap: 1rem;
   }
   div#AboutUs_Page #aboutus {
-    grid-area: About;
+    grid-area: bio;
   }
   div#AboutUs_Page #packages {
-    grid-area: dest;
+    grid-area: pkg;
+    border: none;
+    padding: 0;
   }
   div#AboutUs_Page #reviews {
-    grid-area: Reviews;
-  }
-  div#AboutUs_Page .divider {
-    display: none;
+    grid-area: r;
   }
 }
 @media only screen and (min-width: 1028px) and (min-width: 1600px) {
@@ -1154,11 +1343,7 @@ div#AboutUs_Page .divider {
   #BlogArticles {
     margin-bottom: 5rem;
   }
-  #BlogArticles div {
-    gap: 1%;
-    width: 100%;
-  }
-  #BlogArticles div .blogCTA {
+  #BlogArticles div div {
     width: 24.2%;
   }
 }
@@ -1194,15 +1379,18 @@ div#AboutUs_Page .divider {
 @media only screen and (min-width: 1028px) {
   div#AboutUs_Page {
     display: grid;
-    grid-template-areas: "About dest Reviews";
+    grid-template-areas: "bio r pkg" "bio r pkg";
+    gap: 1rem;
   }
   div#AboutUs_Page #aboutus {
-    grid-area: About;
+    grid-area: bio;
+  }
+  div#AboutUs_Page #packages {
+    grid-area: pkg;
+    border: none;
+    padding: 0;
   }
   div#AboutUs_Page #reviews {
-    grid-area: Reviews;
-  }
-  div#AboutUs_Page .divider {
-    display: none;
+    grid-area: r;
   }
 }/*# sourceMappingURL=style.css.map */
